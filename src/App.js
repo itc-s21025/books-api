@@ -2,12 +2,20 @@ import React, { useState, useEffect } from 'react'
 import "./App.css"
 import Header from "./Header.js"
 
-
-const bookname = '四畳半神話大系'
-const uri = `https://www.googleapis.com/books/v1/volumes?q=intitle:${bookname}&maxResults=1`
-
 const App = props => {
   const [data, setData] = useState([])
+  const [bookdata, setBookdata] = useState([])
+
+  const handelOnChange = (event) => setBookdata(event.target.value);
+
+  const resetInputField = () => {
+    setBookdata("")
+  }
+
+  const callSearch = (e) => {
+    props.App(bookdata)
+    resetInputField();
+  }
   useEffect(
     () =>
       window
@@ -18,13 +26,17 @@ const App = props => {
     []
   )
 
+  const bookname = 'React'
+  const uri = `https://www.googleapis.com/books/v1/volumes?q=intitle:${bookdata}&maxResults=1`
 
 
-  const a = data.volumeInfo
+
 
   return (
     <>
       <Header text="書籍検索" />
+      <input type='text' onChange={handelOnChange} />
+      <input onClick={callSearch} type="submit" value="SEARCH" />
       <div className="item">
         <ul>
           <div className="items">
