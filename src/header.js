@@ -1,11 +1,11 @@
 import React from "react";
 
-const Header = (props) => {
+const Head = (props) => {
     return (
-        <header className="App-header">
+        <header className="App-head">
             <h2>{props.text}</h2>
         </header>
     );
 };
 
-export default Header;
+export default Head;

@@ -17,10 +17,10 @@ li {
   display: inline-block;
   height: 400;
   margin-left: 50px;
-  margin-right: auto;
+  margin-right: 100px;
 }
 
-.App-header {
+.App-head {
   background-color: #95addd;
   height: 70px;
   display: flex;
@@ -32,3 +32,36 @@ li {
   padding: 20px;
   cursor: pointer;
 }
+
+.items3 {
+  margin-top: 10px;
+}
+
+.search {
+  box-sizing: border-box;
+  margin-top: 10px;
+  margin-left: 540px;
+  
+}
+.search input[type="text"]{
+  background: #ccddf5;
+  border: none;
+  height: 2.0em;
+}
+.search_container input[type="text"]:focus {
+  outline: 0;
+}
+.search input[type="submit"]{
+  cursor: pointer;
+  border: none;
+  background: #3879D9;
+  color: #fff;
+  outline : none;
+  height: 2.2em;
+}
+.search ::-webkit-input-placeholder {
+  color: #3879D9;
+}
+
+
+
