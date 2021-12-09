@@ -3,7 +3,6 @@ import Head from './header.js'
 import Searchbooks from './Searchbooks.js'
 import './App.css'
 
-const url = 'https://www.googleapis.com/books/v1/volumes?q=intitle:タイトル&maxResults=1'
 
 const App = () => {
   const [titleinput, setTitleInput] = useState(true)
