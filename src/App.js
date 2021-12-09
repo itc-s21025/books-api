@@ -9,15 +9,6 @@ const App = () => {
   const [titleinput, setTitleInput] = useState(true)
   const [data, setData] = useState([])
 
-  //useEffect(() => {
-  //fetch(url)
-  //.then(response => response.json())
-  //.then(jsonResponse => {
-  //setData(jsonResponse.items)
-
-  //})
-  //}, [])
-
   const search = searchdata => {
     setTitleInput(true)
 
