@@ -3,7 +3,7 @@ import Header from './Header.js'
 import Search from './Search.js'
 import './App.css'
 
-const url = 'https://www.googleapis.com/books/v1/volumes?q=intitle:白いしるし'
+const url = 'https://www.googleapis.com/books/v1/volumes?q=intitle:四畳半神話大系&maxResults=1'
 
 const App = () => {
   const [loading, setLoading] = useState(true)
@@ -55,7 +55,12 @@ const App = () => {
               {data.map(v => (
                 <p key={v.imageLinks}>{v.volumeInfo.description}</p>
               ))}
+
+              {data.map(v => (
+                <p key={v.imagelinks}>{v.smallThumbnail}</p>
+              ))}
             </div>
+
 
 
           </ul>
