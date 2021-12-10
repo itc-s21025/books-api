@@ -12,3 +12,8 @@
 * [本の検索コンポーネント(Searchbooks.js)](./src/Searchbooks.js)
 * [hederコンポーネント(header.js)](./src/header.js)
 * [CSSコード(App.css)](./src/App.css)
+
+###  書籍検索アプリの使用方法
+![実際のアプリ画面](./public/p2.png)
+![検索した後の画面](./public/p3.png)
+* 検索ボックスに本のタイトルを入力すると、検索した本の情報が表示されます。
